@@ -16,9 +16,16 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  try {
+    const categories = await Category.findByPk(req.params.id);
+    res.status(200).json(categories);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json("Error while retrieving data from database");
+  }
 });
 
 router.post("/", (req, res) => {
