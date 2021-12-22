@@ -44,7 +44,8 @@ Now start the server using:
 `npm run start`
 
 <br>
-For the usage, please watch this [demonstration video](https://) to see how to set up the server and use Insomnia for sending queries.
+
+For the usage, please watch this [demonstration video](https://watch.screencastify.com/v/TwLqKCMX8miLeLj6fcTI) to see how to set up the server and use Insomnia for sending queries.
 
 <br>
 
